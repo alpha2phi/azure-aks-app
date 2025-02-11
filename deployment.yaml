@@ -12,9 +12,9 @@ spec:
       labels:
         app: hello-world
     spec:
-      # securityContext:
-      #   runAsNonRoot: true
-      #   runAsUser: 1000
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 100
       containers:
         - name: hello-world
           image: myacrregistry168168.azurecr.io/hello-world:latest

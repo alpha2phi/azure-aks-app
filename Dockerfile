@@ -14,7 +14,7 @@ COPY server.js .
 RUN chown -R appuser:appgroup /app
 
 # Set permissions and switch user
-# USER appuser
+USER appuser
 
 # Expose the application port
 EXPOSE 3000
