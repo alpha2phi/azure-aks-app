@@ -17,7 +17,7 @@ spec:
       #   runAsUser: 1000
       containers:
         - name: hello-world
-          image: myacrregistry.azurecr.io/hello-world:latest
+          image: myacrregistry168168.azurecr.io/hello-world:latest
           ports:
             - containerPort: 3000
           securityContext:
