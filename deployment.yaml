@@ -14,7 +14,7 @@ spec:
     spec:
       securityContext:
         runAsNonRoot: true
-        runAsUser: 100
+        runAsUser: 1001
       containers:
         - name: hello-world
           image: myacrregistry168168.azurecr.io/hello-world:latest
