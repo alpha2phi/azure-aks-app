@@ -14,7 +14,7 @@ spec:
     spec:
       securityContext:
         runAsNonRoot: true
-        runAsUser: 1001
+        # runAsUser: 1001
       containers:
         - name: hello-world
           image: myacrregistry168168.azurecr.io/hello-world:latest
@@ -23,6 +23,7 @@ spec:
           securityContext:
             allowPrivilegeEscalation: false
             readOnlyRootFilesystem: true
+            privileged: false
             capabilities:
               drop:
                 - ALL
